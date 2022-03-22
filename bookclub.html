@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Book Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QEQD55M1LC"></script>
@@ -52,10 +55,23 @@
 	</p>
 	<img src = "images/americandirt.jpg" alt="A book cover with blue bird drawings on a white backdrop" width="200"/>
 
-	<p>Intake form: </p>
-	<p>&#8594;First name: </p>
-	<p>&#8594;Email:</p>
-	<p>&#8594;Let me know a little about you and why you're interested in joining!: </p>
+	<form>
+		<fieldset>
+		  <legend>Intake Form</legend>
+	  
+		  <label for="name_id">Your Name</label>
+		  <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+	  
+		  <label for="email_id">Your Email</label>
+		  <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+	  
+	  
+		  <label for="msg">Let me know a little about you and why you're interested in joining!:</label>
+		  <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+	  
+		  <input type="submit" value = "Join">
+		</fieldset>
+	   </form>
 
 	</main>
 	<footer>

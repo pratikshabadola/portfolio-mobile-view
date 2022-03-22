@@ -7,17 +7,20 @@ ul {
 h1 {
     font-size: 40px;
     margin: 10px;
+    font-family: 'Nunito', sans-serif;
 }
 
 h2 {
     font-size: 25px;
     margin: 20px;
     margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 p {
     margin: 10px;
     font-size: 17px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .skip {
@@ -44,6 +47,7 @@ nav {
 li a{ 
     text-decoration: none;
     color: white;
+    font-family: 'Nunito', sans-serif;
 }
 
 .active {
@@ -71,6 +75,14 @@ img {
     border: 5px solid darkkhaki;
     background-color: darkgreen;
     padding: 20px;
+    animation-name: banner-move;
+    animation-duration: 7s;
+}
+
+@keyframes banner-move {
+    0% {width: 300px; opacity: 0.5;}
+    100% {width: 475px; opacity: 1;}
+   
 }
 
 .landingpage:hover {
@@ -95,4 +107,23 @@ img:hover {
 
 li:hover {
     font-weight: bold;
+}
+
+body {
+    background-image: url("../images/mint_aesthetic_hearts.jpeg"); 
+}
+
+.fa-envelope {
+    padding: 30px;
+    display: inline;
+}
+
+#email_txt {
+    display: inline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .landingpage {
+        animation: none;
+    }
 }
