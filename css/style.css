@@ -122,8 +122,46 @@ body {
     display: inline;
 }
 
+.row {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.books-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 @media (prefers-reduced-motion: reduce) {
     .landingpage {
         animation: none;
     }
+}
+
+@media screen and (min-width: 900px){
+    .row{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    ul {
+        flex-direction: row;
+    }
+
 }
