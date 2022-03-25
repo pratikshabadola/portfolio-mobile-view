@@ -26,6 +26,8 @@ p {
 .skip {
     margin-top: 40px;
     margin-left: 10px;
+    position:absolute;
+    left:-10000px;
 }
 
 
